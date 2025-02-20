@@ -241,9 +241,12 @@ border-radius: 15px;
 }
 @media (max-width:500px) {
   .navbar1 .menu-items{
-    height: 80vh;
+    height: 50vh;
     width: 40%;
     
+  }
+  .navbar1 .menu-items a{
+    font-size: 15px;
   }
 }
 @media (max-width:400px) {
