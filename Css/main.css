@@ -298,3 +298,12 @@ transform: scale(0);
     margin-left: 71px;
     color: #2f415f;
    }
+@media (max-width:500px) {
+
+    .p-content h3{
+        font-size: 30px;
+    }
+   .containerp{
+    margin-bottom: 10px;
+   }
+}
