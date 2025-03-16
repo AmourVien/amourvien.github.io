@@ -134,9 +134,7 @@ body{
     
     
     
-    .text-content .main-text button {
-       
-    }
+   
     .imgb{
         width: 100%;
         height: 100%;
@@ -211,9 +209,7 @@ transform: scale(0);
     
     
     
-    .text-content .main-text button {
-       
-    }
+   
     .imgb{
         width: 100%;
         height: 100%;
@@ -298,7 +294,7 @@ transform: scale(0);
     margin-left: 71px;
     color: #2f415f;
    }
-@media (max-width:500px) {
+   @media (max-width:500px) {
 
     .p-content h3{
         font-size: 30px;

@@ -1,56 +1,85 @@
-
 .company-info {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    gap: 20px;
-  }
-  
-  
-  .info-box {
-    background-color: #222831;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    width: 30%;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    color: #F1F0E8;
-  }
-  
-  .info-box:hover {
-    transform: translateY(-10px);
-  }
-  
-  
-  .owner {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .owner img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .owner p {
-    color: #F1F0E8;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
- 
-  .map-info iframe {
-    border-radius: 10px;
-  }
-  .owner:hover .owner-image img {
-    transform: scale(1.2);
-   transition: 1s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
 
+.info-box {
+  background-color: #222831;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  flex: 1 1 300px;
+  max-width: 30%;
+  min-width: 280px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  color: #F1F0E8;
+  text-align: center;
+}
+
+.info-box:hover {
+  transform: translateY(-10px);
+}
+
+.owner {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owner img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.owner:hover img {
+  transform: scale(1.2);
+}
+
+.owner p {
+  color: #F1F0E8;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.map-info iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 1024px) {
+  .info-box {
+      max-width: 45%;
   }
-  
-  
+}
+
+@media (max-width: 768px) {
+  .company-info {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .info-box {
+      max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-box {
+      max-width: 100%;
+  }
+
+  .owner img {
+      width: 120px;
+      height: 120px;
+  }
+}

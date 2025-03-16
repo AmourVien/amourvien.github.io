@@ -78,7 +78,7 @@ body {
   display: block;
   position: relative;
   height: 60px;
-  
+  z-index: 10;
 }
 
 .nav-container .checkbox {
@@ -208,58 +208,30 @@ border-radius: 15px;
   display: none;
 }
 
-@media (max-width:900px) {
-  .navbar1 .menu-items{
-    height: 80vh;
-    width: 40%;
-  
-    
-  }
-}
-
-@media (max-width:800px) {
-  .navbar1 .menu-items{
-    height: 80vh;
-    width: 40%;
-    
-  }
-}
-@media (max-width:700px) {
-  .navbar1 .menu-items{
-    height: 80vh;
-    width: 40%;
-    
-  }
-}
-
-@media (max-width:600px) {
-  .navbar1 .menu-items{
-    height: 80vh;
-    width: 40%;
-    
-  }
-}
-@media (max-width:500px) {
-  .navbar1 .menu-items{
-    height: 50vh;
-    width: 40%;
-    
-  }
-  .navbar1 .menu-items a{
-    font-size: 20px;
-  }
-}
-@media (max-width:400px) {
-  .navbar1 .menu-items{
-    height: 80vh;
-    width: 40%;
-    
-  }
-}
-@media (max-width:300px) {
-  .navbar1 .menu-items{
-    height: 80vh;
+@media (max-width:768px) {
+  .navbar1 .menu-items {
     width: 50%;
-    
+   
+  }
+  .navbar1 .menu-items a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:480px) {
+  .navbar1 .menu-items {
+    width: 50%;
+  }
+  .navbar1 .menu-items a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:320px) {
+  .navbar1 .menu-items {
+    width: 100%;
+  }
+  .navbar1 .menu-items a {
+    font-size: 0.9rem;
   }
 }
